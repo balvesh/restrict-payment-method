@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<section id="payment" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+			<group id="checkmo" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+				<field id="customer_groups" type="multiselect" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>Payment Applicable for Customer Group</label>
+					<source_model>Learning\RestrictPaymentMethod\Model\Adminhtml\System\Config\Source\Customer\Group</source_model>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
